@@ -13,14 +13,17 @@ public class HomeRent {
         this.driver = d;
     }
 
+    //method to feed post code
     public void enterPostcode(String uname) {
         driver.findElement(search).sendKeys(uname);
     }
 
+    //method to search properties based on the postcode entered
     public void searchProperty_ForRent() {
         driver.findElement(rent_btn).click();
     }
 
+    //Assert test success by matching the expected title to currently rendered title
     public void verifyTittle() {
         String ActualTitle = driver.getTitle();
         String ExpectedTittle = "Find property to rent in CV3";
