@@ -13,6 +13,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.time.Duration;
 import java.util.Properties;
 
+//Utility class to be used in the runner classes
 public class Base {
     private WebDriver driver = null;
     private static Logger log = Logger.getLogger(Base.class);
